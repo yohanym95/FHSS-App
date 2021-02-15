@@ -7,10 +7,14 @@
     <string name="uni_two">The essence of the revical of education in Sri Lanka was the University of Sri Jayawardenepura. It is the second oldest University in Sri Lanka and the first University established in Independent Ceylon.</string>
     <string name="uni_three">Today the University stands strong with eight faculties, faculty of Humanities and Social Sciences, Faculty of Applied Sciences, Faculty of Management Studies and Commerce, Faculty of Medical Sciences, Faculty of Graduate Studies, Faculty of Engineering, Faculty of Technology and its latest addition Faculty of Allied Health Sciences. The University is home to over 12,000 Undergraduates, over 1000 postgraduate students. It is considered the largest University in terms of Student Population in Sri Lanka.</string>
 
+    <string name="fhss_one">The faculty of Humanities and Special Sciences is an important learning space which has granted large number of scholars and degrees within humanities and social sciences. The origin of the faculty dates through back to the foundation of vidyodaya piriwena.</string>
+    <string name="fhss_two">All the degree programmes are continuously being reviewed and developed are designed to produce globally responsible and socially responsive graduates with broad knowledge and skills related to the respoctive study areas. Practical training sessions further invlove enhancing soft skills of undergraduates and they can gain not only the experience but also the exposure through these institutional training which ultimately allow them to earn credits in their degree programme. The faculty also given valuable chance to improve IT skills and English knowledge of the students. The Faculty of Humanities and Social Sciences is engage in the mission of producing high quality graduates to the national development and sensitive global.</string>
     <string-array name="courses">
         <item>Course 1</item>
         <item>Course 2</item>
         <item>Course 3</item>
     </string-array>
+
+
 
 </resources>

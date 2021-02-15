@@ -6,10 +6,20 @@ public class CallItem {
 
     private String staffNumber;
     private String staffName;
+    private int id;
 
-    public CallItem(String staff_Name, String staff_Number){
+    public CallItem(String staff_Name, String staff_Number, int iD){
         staffName = staff_Name;
         staffNumber = staff_Number;
+        id = iD;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getStaffNumber() {

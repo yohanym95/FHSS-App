@@ -65,7 +65,8 @@ public class DBmain {
         ContentValues cv  = new ContentValues();
         cv.put(KEY_StaffName,name);
         cv.put(KEY_StaffNumber,number);
-        ourDatabase.close();
+       // ourDatabase.close();
+      //  ourDatabase.de
         return ourDatabase.insert(DATABASE_TABLE,null,cv);
     }
 
@@ -76,11 +77,17 @@ public class DBmain {
         callList.clear();
         if(cursor.moveToFirst()){
             do{
-                CallItem callItem = new CallItem(cursor.getString(1),cursor.getString(2));
+                CallItem callItem = new CallItem(cursor.getString(1),cursor.getString(2),Integer.parseInt(cursor.getString(0)));
                 callList.add(callItem);
             }while (cursor.moveToNext());
         }
-        ourDatabase.close();
+       // ourDatabase.close();
         return callList;
+    }
+
+    public Integer deleteContact (Integer id) {
+        return ourDatabase.delete(DATABASE_TABLE,
+                "id = ? ",
+                new String[] { Integer.toString(id) });
     }
 }

@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new StaffFragment()).addToBackStack(null).commit();
                 break;
+            case R.id.nav_fhss:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FHSSFragment()).addToBackStack(null).commit();
+                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

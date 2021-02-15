@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -19,14 +20,16 @@ import com.example.myapp.Database.DBmain;
 import com.example.myapp.Models.CallItem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StaffFragment extends Fragment {
 
     View view;
     RecyclerView recyclerView;
     CallAdapter callAdapter;
-    ArrayList<CallItem> callItems;
+    List<CallItem> callItems;
     TextInputLayout staffName,staffNumber;
+    FloatingActionButton floatingActionButton;
 
     @Nullable
     @Override
@@ -40,20 +43,60 @@ public class StaffFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         callItems = new ArrayList<>();
-        callItems.add(new CallItem("Staff 1","0112345678"));
-        callItems.add(new CallItem("Staff 1","0112345678"));
+        DBmain dBmain = new DBmain(getContext());
+        dBmain.open();
+        callItems = dBmain.getAllContact();
+        dBmain.close();
         recyclerView = view.findViewById(R.id.recycle_view);
-        callAdapter = new CallAdapter(callItems);
+        callAdapter = new CallAdapter(callItems,getContext());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(callAdapter);
 
+        floatingActionButton = view.findViewById(R.id.floatingButton1);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myCustomDialog();
+            }
+        });
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        DBmain dBmain = new DBmain(getContext());
+        dBmain.open();
+        callItems = dBmain.getAllContact();
+        dBmain.close();
+        recyclerView = view.findViewById(R.id.recycle_view);
+        callAdapter = new CallAdapter(callItems,getContext());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(callAdapter);
+
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        DBmain dBmain = new DBmain(getContext());
+        dBmain.open();
+        callItems = dBmain.getAllContact();
+        dBmain.close();
+        recyclerView = view.findViewById(R.id.recycle_view);
+        callAdapter = new CallAdapter(callItems,getContext());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(callAdapter);
     }
 
     private void myCustomDialog(){
         final AlertDialog.Builder myDialog = new AlertDialog.Builder(getContext());
         myDialog.setTitle("Staff Service");
-        myDialog.setTitle("Add Staff Contact Details");
+        myDialog.setMessage("Add Staff Contact Details");
 
         LayoutInflater inflater = LayoutInflater.from(getContext());
         View myCustomLayout = inflater.inflate(R.layout.contactcustom,null);
@@ -77,6 +120,18 @@ public class StaffFragment extends Fragment {
                     DBmain dBmain = new DBmain(getContext());
                     dBmain.open();
                     dBmain.addData(name, number);
+                    dBmain.close();
+                    Toast.makeText(getContext(),"Successfully Added the details",Toast.LENGTH_LONG).show();
+
+                    DBmain dBmain1 = new DBmain(getContext());
+                    dBmain1.open();
+                    callItems = dBmain1.getAllContact();
+                    recyclerView = view.findViewById(R.id.recycle_view);
+                    CallAdapter callAdapter1 = new CallAdapter(callItems,getContext());
+                    recyclerView.setHasFixedSize(true);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                    recyclerView.setAdapter(callAdapter1);
+                    dBmain1.close();
                 }
               dialog.dismiss();
             }

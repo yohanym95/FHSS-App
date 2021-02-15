@@ -35,11 +35,21 @@
 
         <ImageView
             android:id="@+id/callImage"
-            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:src="@drawable/ic_baseline_call_24"
+            />
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_baseline_delete_24"
             />
     </LinearLayout>
 
