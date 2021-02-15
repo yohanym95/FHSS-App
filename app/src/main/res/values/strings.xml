@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FHSS</string>
+    <string name="uni_details">University of Sri Jayewardenepura,</string>
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">Close Navigation drawer</string>
+    <string name="uni_one">The University of Sri Jayewardenepura situated in the heart of Colombo boasts of a long and glorious history. Having been established in the 1959 at Gangodawila, its roots can be traced back to the Vidyodaya Pirivena established in 1873 by Hikkaduwe Sri Sumangala Thero at Maligakanda.  Today the University pays homage to 60 years of history while paying tribute to journey of 148 years.</string>
+    <string name="uni_two">The essence of the revical of education in Sri Lanka was the University of Sri Jayawardenepura. It is the second oldest University in Sri Lanka and the first University established in Independent Ceylon.</string>
+    <string name="uni_three">Today the University stands strong with eight faculties, faculty of Humanities and Social Sciences, Faculty of Applied Sciences, Faculty of Management Studies and Commerce, Faculty of Medical Sciences, Faculty of Graduate Studies, Faculty of Engineering, Faculty of Technology and its latest addition Faculty of Allied Health Sciences. The University is home to over 12,000 Undergraduates, over 1000 postgraduate students. It is considered the largest University in terms of Student Population in Sri Lanka.</string>
+
+    <string-array name="courses">
+        <item>Course 1</item>
+        <item>Course 2</item>
+        <item>Course 3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".WelcomeActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+        <ImageView
+            android:id="@+id/uokImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@mipmap/uokw_foreground" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/welcomeText"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:text="WELCOME"/>
+
+        <ImageView
+            android:id="@+id/imagelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/uokImage"
+            android:layout_alignBottom="@id/uokImage"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/uokk_foreground"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uni_details"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gangodawila,"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nugegoda, Sri Lanka."
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tele: +94112758000, +94112802022, +94112801024, +94112801025"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: info@sjp.ac.lk,"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Web: www.sjp.ac.lk"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:backgroundTint="#2196F3">
+
+        </android.support.design.widget.FloatingActionButton>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UniHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/uokk_background"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University Home"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:id="@+id/courseSpinner"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:entries="@array/courses"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="@string/uni_one"
+                android:paddingBottom="8dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="@string/uni_two"
+                android:paddingBottom="6dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="@string/uni_three"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:maxLines="50"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

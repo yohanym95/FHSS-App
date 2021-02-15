@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/staffName"
+                android:textSize="16dp"
+                android:text="staff Name"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/staffNumber"
+                android:textSize="16dp"
+                android:text="staff Number"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callImage"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_call_24"
+            />
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
