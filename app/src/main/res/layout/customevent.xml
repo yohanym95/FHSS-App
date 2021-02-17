@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventName"
+                android:textSize="16dp"
+                android:text="Event Name"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventDetails"
+                android:textSize="16dp"
+                android:text="Event Details"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_baseline_delete_24"
+            />
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

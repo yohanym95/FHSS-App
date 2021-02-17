@@ -10,11 +10,25 @@
     <string name="fhss_one">The faculty of Humanities and Special Sciences is an important learning space which has granted large number of scholars and degrees within humanities and social sciences. The origin of the faculty dates through back to the foundation of vidyodaya piriwena.</string>
     <string name="fhss_two">All the degree programmes are continuously being reviewed and developed are designed to produce globally responsible and socially responsive graduates with broad knowledge and skills related to the respoctive study areas. Practical training sessions further invlove enhancing soft skills of undergraduates and they can gain not only the experience but also the exposure through these institutional training which ultimately allow them to earn credits in their degree programme. The faculty also given valuable chance to improve IT skills and English knowledge of the students. The Faculty of Humanities and Social Sciences is engage in the mission of producing high quality graduates to the national development and sensitive global.</string>
     <string-array name="courses">
-        <item>Course 1</item>
-        <item>Course 2</item>
-        <item>Course 3</item>
+        <item>Select Course</item>
+        <item>Anthropology</item>
+        <item>Criminology and Criminal justice</item>
+        <item>Economics</item>
+        <item>English and Linguistics</item>
+        <item>English Language Teaching</item>
+        <item>Geography</item>
+        <item>History and Archaeology</item>
+        <item>Information and Communication Technology</item>
+        <item>Languages, Cultural Studies and Performing Arts</item>
+        <item>Music and Creative Technology</item>
+        <item>Pali and Buddhist Studies</item>
+        <item>Philosophy and Psychology</item>
+        <item>Political Science</item>
+        <item>Sinhala and Mass Communication</item>
+        <item>Sociology</item>
+        <item>Social Statics</item>
+        <item></item>
     </string-array>
-
 
 
 </resources>
